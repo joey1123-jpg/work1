@@ -1,0 +1,97 @@
+/* styles.css */
+/* 共用的外部 CSS，兩個 HTML 都可以使用 */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Microsoft JhengHei", "Noto Sans TC", sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.9;
+}
+
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 30px 20px 20px;
+}
+
+h1 {
+    margin: 0 0 8px;
+    font-size: 36px;
+}
+
+h2 {
+    margin: 0 0 20px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.navigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.navigation li {
+    display: inline-block;
+}
+
+.navigation a {
+    display: block;
+    padding: 8px 18px;
+    color: white;
+    text-decoration: none;
+    background-color: #287fba;
+    border-radius: 20px;
+}
+
+.navigation a:hover {
+    background-color: #216a9b;
+}
+
+main {
+    width: min(800px, 90%);
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+    font-size: 18px;
+}
+
+main p {
+    margin: 12px 0;
+}
+
+main a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 20px;
+    color: white;
+    background-color: #3498db;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+main a:hover {
+    background-color: #287fba;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-size: 14px;
+}
+
+.copyright {
+    margin: 0;
+}
