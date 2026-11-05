@@ -95,3 +95,123 @@ footer {
 .copyright {
     margin: 0;
 }
+
+/* 只套用在 index3.html，保留其他頁面的既有樣式 */
+@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
+
+body.page-index3 {
+    font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+    background: #74c9dc url("https://peterchang72.github.io/nknu-demo-page222/img/sky.jpg") center center / cover fixed no-repeat;
+    color: #464c4f;
+    text-align: center;
+    -webkit-text-size-adjust: 100%;
+}
+
+.page-index3 header {
+    padding: 10px 16px 0;
+    background: linear-gradient(rgba(0, 91, 112, 0.8), rgba(123, 219, 241, 0.8));
+}
+
+.page-index3 h1 {
+    margin: 0.67em 0;
+    color: #e4eef7;
+    font-size: 28px;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px #666;
+    animation: slidein 3s ease-out both;
+}
+
+.page-index3 h2 {
+    margin: 0 0 10px;
+    color: #e4eef7;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.page-index3 .navigation ul {
+    display: block;
+    margin: 0 -16px;
+    padding: 10px;
+    background: #929292;
+}
+
+.page-index3 .navigation li {
+    display: inline;
+    margin: 0 8px;
+}
+
+.page-index3 .navigation a {
+    display: inline;
+    padding: 0;
+    color: #fff;
+    background: none;
+    border-radius: 0;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.page-index3 .navigation a:hover {
+    color: #62d5e8;
+    background: none;
+    text-decoration: underline;
+}
+
+.page-index3 main {
+    width: 100%;
+    margin: 0;
+    padding: 30px 20px;
+    background: rgba(220, 247, 248, 0.25);
+    color: #464c4f;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 16px;
+    line-height: 2;
+}
+
+.page-index3 main p {
+    margin: 1em 0;
+}
+
+.page-index3 main a {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    color: #ef5095;
+    background: none;
+    border-radius: 0;
+    text-decoration: underline;
+}
+
+.page-index3 main a:hover {
+    color: #048fc1;
+    background: none;
+    text-decoration: none;
+}
+
+.page-index3 footer {
+    padding: 10px;
+    background: linear-gradient(rgba(123, 219, 241, 0.8), rgba(0, 91, 112, 0.8));
+    color: #e4eef7;
+    font-size: 14px;
+}
+
+.page-index3 img {
+    width: min(50%, 720px);
+    height: auto;
+    border-radius: 10px 0;
+    box-shadow: 1px 1px 5px #258ca6;
+}
+
+@keyframes slidein {
+    from { transform: translateX(35vw); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@media (max-width: 600px) {
+    .page-index3 main { padding: 24px 12px; }
+    .page-index3 img { width: 90%; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .page-index3 h1 { animation: none; }
+}
