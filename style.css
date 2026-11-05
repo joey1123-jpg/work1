@@ -1,4 +1,5 @@
 /* styles.css */
+@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
 /* 共用的外部 CSS，兩個 HTML 都可以使用 */
 
 * {
@@ -97,7 +98,6 @@ footer {
 }
 
 /* 只套用在 index3.html，保留其他頁面的既有樣式 */
-@import url("https://fonts.googleapis.com/earlyaccess/notosanstc.css");
 
 body.page-index3 {
     font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
